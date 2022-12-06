@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/source-sans-pro/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: url("../font/source-sans-pro/SourceSansPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins semiBold";
+    src: url("../font/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Regular.ttf");
+}
+
+@layer base {
+    body {
+        @apply font-SourceSansPro;
+    }
+}
+
+html {
+    height: 100%;
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        #app {
+            height: 100%;
+        }
+    }        
+}  
+
+input:checked + div {  
+    @apply border-blue-500;  
+} 
+input:checked + div svg {  
+    @apply block;  
+}
+
+input[id="todo"]:checked + div {  
+    background: #3DD598;
+    border-color: #3DD598;
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        height: auto !important;
+    }
+}

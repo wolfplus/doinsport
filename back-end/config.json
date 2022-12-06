@@ -1,0 +1,22 @@
+﻿{
+    "development": {
+        "database": {
+            "host": "localhost",
+            "port": 3306,
+            "user": "root",
+            "password": "",
+            "database": "doinsport"
+        },
+        "secret": "mdp123"
+    },
+    "production": {
+        "database": {
+            "host": "141.94.79.96",
+            "port": 3306,
+            "user": "hIQXozKsnMqp",
+            "password": "Drp?=#Rt&*5rTk5n$s7T",
+            "database": "doinsport"
+        },
+        "secret": "mdp123"
+    }
+}
